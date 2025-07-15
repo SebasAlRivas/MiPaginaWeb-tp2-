@@ -36,21 +36,31 @@ header {
     }
 
     .navbar {
-        list-style-type: none;
-        padding: 0;
-        text-align: center;
-        background-color: #0b7a68;
+    display: flex;
+    justify-content: center;
+    background-color: #00796b;
+    padding: 15px 0;
+    gap: 30px;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
 
     .navbar li {
-        display: inline;
-        margin: 0 15px;
+        list-style: none;
     }
 
     .navbar a {
         color: white;
         text-decoration: none;
-        font-weight: bold;
+        font-size: 1.1rem;
+        padding: 10px 20px;
+        border-radius: 8px;
+        transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .navbar a:hover {
+        background-color: #004d40;
+        transform: scale(1.05);
     }
 
 section {
@@ -59,6 +69,55 @@ section {
     border: 2px solid #00796b;
     border-radius: 8px;
     background-color: #b2dfdb;
+}
+#contacto {
+    background-color: #b2dfdb;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contacto-contenedor {
+    max-width: 600px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus {
+    border-color: #004d40;
+    outline: none;
+}
+
+.formulario-contacto button {
+    background-color: #004d40;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formulario-contacto button:hover {
+    background-color: #00695c;
 }
 
 footer {
